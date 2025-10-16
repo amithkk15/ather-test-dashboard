@@ -28,5 +28,6 @@ app.get('/data', async (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; // ✅ use Render's port, fallback to 3000 locally
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
